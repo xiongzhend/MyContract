@@ -26,4 +26,15 @@ describe('MyContract', () => {
         assert.equal(manager, contractManager, "The owner is the one who launches the smart contract.");
     });
 
+    it('getCommit', async () => {
+        shaRandomNumber = await contract.methods.getCommit(0).call();
+        console.log('commit: ' + shaRandomNumber);
+    });
+    
+    it('getTest', async () => {
+        await contract.methods.placeBet(100).send({
+            from: manager,
+            value: web3.utils.toWei('0.01', 'ether')
+        });
+    });
 });
