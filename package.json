@@ -1,0 +1,22 @@
+{
+  "name": "auction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "ethereumjs-util": "^6.1.0",
+    "ganache-cli": "^6.4.1",
+    "web3": "^1.0.0-beta.51"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
